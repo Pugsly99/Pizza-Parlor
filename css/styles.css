@@ -1,10 +1,42 @@
 form {
   text-align: center;
   margin: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 select {
   margin: 15px;
 }
+
+body {
+  background: url(../img/parlor.jpg);
+}
+
+.row {
+  background: url(../img/sauce.jpg);
+} 
+
+.card{
+margin: 10px;
+background-color: rgb(230, 207, 177);
+text-align: center;
+}
+
+label {
+  text-indent: 30px;
+}
+
+button {
+  text-align: center;
+  margin: 25px;
+  margin-left: 50px; 
+}
+
+#makePizza {
+  display: none;
+} 
+
+img {
+  margin: 20px; 
+}
+
