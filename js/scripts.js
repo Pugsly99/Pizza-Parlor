@@ -20,7 +20,7 @@ Pizza.prototype.size = function (size) {
 }
 
 Pizza.prototype.showPizza = function(cheesename, saucename, extra1name, extra2name, extra3name) {
-  $("#myPizza").append("Your " + this.size + " " + cheesename + " with " + saucename + " sauce and " + extra1name + " " + extra2name + " " + extra3name + " will be ready soon!");
+  $("#myPizza").append("Your " + this.size + " " + cheesename + " with " + saucename + " sauce and " + extra1name + " " + extra2name + " " + extra3name + " will be ready soon! Please send " + this.price + "$ to Rylandadams@yahoo.com");
 }
 
 

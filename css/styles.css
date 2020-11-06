@@ -12,9 +12,6 @@ body {
   background: url(../img/parlor.jpg);
 }
 
-/* .row {
-  background: url(../img/sauce.jpg);
-}  */
 
 .card{
 margin: 10px;
@@ -31,10 +28,6 @@ button {
   margin: 25px;
   margin-left: 50px; 
 }
-
-/* #makePizza {
-  display: none;
-}  */
 
 img {
   margin: 20px; 
