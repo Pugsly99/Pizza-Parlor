@@ -28,7 +28,14 @@ Pizza.prototype.showPizza = function(cheesename, saucename, extra1name, extra2na
 
 //UI logic
 $(document).ready(function() {
-  $("form#pizza").submit(function (event)  {
+  // $( "button#maker" ).click(function(event) {
+  //   event.preventDefault();
+  //   $(".main").hide();
+  //   $("#makePizza").show();
+
+  // });
+
+  $("form#pizza").submit(function ()  {
     event.preventDefault();
 
     $( "h2").empty();
