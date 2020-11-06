@@ -1,26 +1,46 @@
 //Business Logic
-function Pizza(size, toppings) {
+function Pizza() {
   this.price = 0;
-  this.size = size;
-  this.toppings = toppings;
+  this.size;
+  this.toppings;
 }
+
+Pizza.prototype.addValue = function (size, sauce, cheese, extra1, extra2, extra3) {
+  let price = size + sauce + cheese + extra1 + extra2 + extra3
+  this.price = price;
+}
+
+Pizza.prototype.size = function (size) {
+  
+  if(size === 10){
+    this.size = "Small";
+  } else if(size === 15){
+    this.size = "Medium";
+  } else 
+    this.size = "Large"; 
+}
+
 
 //UI logic
 $(document).ready(function() {
   $("form#pizza").submit(function (event)  {
     event.preventDefault();
 
-    let size = parseInt($("select#size").val())
-    let sauce = parseInt($("select#sauce").val())
-    let cheese = parseInt($("select#cheese").val())
-    let extra1 = parseInt($("select#extra1").val())
-    let extra2 = parseInt($("select#extra2").val())
-    let extra3 = parseInt($("select#extra3").val())
-    
+    let pizza = new Pizza();
+    const size = parseInt($("select#size").val());
+    const sauce = parseInt($("select#sauce").val());
+    const cheese = parseInt($("select#cheese").val());
+    const extra1 = parseInt($("select#extras1").val());
+    const extra2 = parseInt($("select#extras2").val());
+    const extra3 = parseInt($("select#extras3").val());
 
-    console.log(size);
-    console.log(toppings);
-    let pizza = new Pizza(size, toppings);
+    pizza.size(size);
+
+    pizza.addValue(size, sauce, cheese, extra1, extra2, extra3);
+    
+    //let toppings = sauce + cheese + extra1 + extra2 + extra3 
+
+    
     console.log(pizza);
 
   });
