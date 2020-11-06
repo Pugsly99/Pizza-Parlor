@@ -29,12 +29,10 @@
 
 | Behavior | Input | Output |
 |-------------------------------------------------|--------|--------|
+| it will prompt user with forms to choose size and toppings | med + cheese, pineapple | med + cheese, pineapple |
+| it will pass the users input through an if else to evaluate price | med + cheese, pineapple | med = 15$, cheese = 2$ pineapple = 3$ |
 |  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+
 
 
 ## Bugs
