@@ -4,17 +4,19 @@ function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
 }
-let pizza = new Pizza("Med", "cheese");
-    console.log(pizza);
 
 //UI logic
 $(document).ready(function() {
-  //$("form#newPizza").submit(function (event)  {
+  $("form#pizza").submit(function (event)  {
     event.preventDefault();
 
+    let size = parseInt($("select#size").val())
+    let toppings = parseInt($("form#toppings").val())
 
-    let pizza = new Pizza(0, "Med", "cheese");
+    console.log(size);
+    console.log(toppings);
+    let pizza = new Pizza(size, toppings);
     console.log(pizza);
 
-  //});
+  });
 });
