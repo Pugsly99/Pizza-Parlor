@@ -20,8 +20,7 @@ Pizza.prototype.size = function (size) {
   } else {
     window.alert("yoooo pick a size, you cant have a pizza without the crust");
     return false;
-  }
-    
+  }   
 }
 
 Pizza.prototype.showPizza = function(cheesename, saucename, extra1name, extra2name, extra3name) {
@@ -37,6 +36,7 @@ $(document).ready(function() {
 
     let pizza = new Pizza();
     const size = parseInt($("select#size").val());
+
     const sauce = parseInt($("select#sauce").val());
     const saucename = $("#sauce option:selected").text();
 
