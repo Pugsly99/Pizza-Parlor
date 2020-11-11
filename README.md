@@ -32,7 +32,7 @@
 | it will prompt user with forms to choose size and toppings | med + cheese, pineapple | med + cheese, pineapple |
 | it will pass the users input through an if else to evaluate price | med + cheese, pineapple | med = 15$, cheese = 2$ pineapple = 3$ |
 | it will pass the value of size into a function to output the size string | 15$ | Medium |
-|  | |  |
+| it will give alert if no size is choosen |  | must choose size |
 
 
 
