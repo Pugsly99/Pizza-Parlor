@@ -46,7 +46,6 @@ Pizza.prototype.priceCheese = function () {
   return this.price;
 }
 
-
 function OrderMaker() {
   let size = $("option[name=size]:selected").val();
   let sauce = $("option[name=sauce]:selected").val();
