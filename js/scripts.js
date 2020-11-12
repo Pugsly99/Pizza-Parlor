@@ -16,8 +16,8 @@ Pizza.prototype.priceSize = function () {
   } else if(this.size === "Large"){
     this.price = 20; 
   } else {
+    this.size = "false";
     window.alert("yoooo pick a size, you cant have a pizza without the crust");
-    this.size === "false";
   };
   this.price += this.toppings.length;
   return this.price;
